@@ -27,6 +27,10 @@ cd MiniappMacBuilder-xxx
 # 指定entitlements(格式为A=xx&B=xxx，设置的每一项应该是bundleId已经具备的权限，否则会被过滤)
 ./MiniAppBuilder --action sign --type appleId --ipa {ipaPath} com.apple.developer.associated-domains=htpps://www.test.com/a/ --install
 ```
+
+4. 免费证书签名，需要到手机端打开：设置 -> 通用 -> VPN与设备管理，然后选择信任对应的签名apple账号
+
+
 ## mail 插件安装
 
 > [mail插件](#mail-plugin) 首次采用免费证书签名时，需要安装一个mail插件，遇到以下提示时，请打开mail登录、启用MiniappBuilder插件并重启mail，然后保持mail打开。
@@ -40,7 +44,6 @@ cd MiniappMacBuilder-xxx
 <img width="500" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/25820f14-6c1e-44e2-ba64-56f327c69254">
 <br/>
 
-4. 免费证书签名，需要到手机端打开：设置 -> 通用 -> VPN与设备管理，然后选择信任对应的签名apple账号
 
 ## 常见问题
 
