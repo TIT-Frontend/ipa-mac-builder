@@ -33,11 +33,11 @@ cd MiniappMacBuilder-xxx
 
 <img width="600" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/028a6e65-cd58-4fe2-b375-8812ea8a40ae">
 <br/>
-<img width="400" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/be291325-3429-415e-af12-cdb1a73cf08f">
+<img width="500" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/be291325-3429-415e-af12-cdb1a73cf08f">
 <br/>
-<img width="400" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/c7202eee-cef1-469a-824e-24a4d4f0df1c">
+<img width="500" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/c7202eee-cef1-469a-824e-24a4d4f0df1c">
 <br/>
-<img width="400" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/25820f14-6c1e-44e2-ba64-56f327c69254">
+<img width="500" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/25820f14-6c1e-44e2-ba64-56f327c69254">
 <br/>
 
 4. 免费证书签名，需要到手机端打开：设置 -> 通用 -> VPN与设备管理，然后选择信任对应的签名apple账号
