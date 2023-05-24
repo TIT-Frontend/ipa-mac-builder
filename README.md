@@ -1,4 +1,4 @@
-## 功能
+## 功能描述
 本工具用于在mac系统上，支持的功能有：
 - 获取连接的手机设备列表
 - 对ipa用Apple免费账号重签名
@@ -27,6 +27,7 @@ cd MiniappMacBuilder-xxx
 # 指定entitlements(格式为A=xx&B=xxx，设置的每一项应该是bundleId已经具备的权限，否则会被过滤)
 ./MiniAppBuilder --action sign --type appleId --ipa {ipaPath} com.apple.developer.associated-domains=htpps://www.test.com/a/ --install
 ```
+## mail 插件安装
 
 > [mail插件](#mail-plugin) 首次采用免费证书签名时，需要安装一个mail插件，遇到以下提示时，请打开mail登录、启用MiniappBuilder插件并重启mail，然后保持mail打开。
 <img width="600" alt="image" src="https://github.com/yujon/ipa-mac-builder/assets/16963584/028a6e65-cd58-4fe2-b375-8812ea8a40ae">
