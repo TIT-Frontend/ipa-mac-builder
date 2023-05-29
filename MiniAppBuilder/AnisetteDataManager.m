@@ -1,6 +1,5 @@
 //
 //  AnisetteDataManager.m
-//  AltPlugin
 //
 
 
