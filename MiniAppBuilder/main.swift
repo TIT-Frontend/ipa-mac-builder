@@ -39,9 +39,6 @@ func queryStringToDictionary(_ queryString: String) -> [String: String] {
 
 class Application: NSObject {
 
-    private let pluginManager = PluginManager()
-
-
     func launch() throws
     {
         do {
@@ -351,22 +348,6 @@ private extension Application
     
         if signType == "appleId"
         {
-            if !self.pluginManager.isMailPluginInstalled
-            {
-                self.pluginManager.installMailPlugin { (result) in
-                    DispatchQueue.main.async {
-                        switch result
-                        {
-                        case .failure(let error):
-                            printStdErr("Failed to Install Mail Plug-in", error.localizedDescription)
-                            finish(.failure(error))
-                        case .success:
-                            finish(.failure(PluginError.taskError(output: "Mail Plug-in had Installed, Please Operate according to [url:https://github.com/yujon/ipa-mac-builder#mail-plugin] and restart Mail. Mail must be running when signing and installing apps")))
-                        }
-                    }
-                }
-                return
-            }
             ALTDeviceManager.shared.signWithAppleID(at: fileURL, to: device!, appleID: username!, password: password!, bundleId: bundleId, entitlements: entitlements!, completion: signFinish)
         } else {
             ALTDeviceManager.shared.signWithCertificate(at: fileURL, certificatePath: certificatePath!, certificatePassword: certificatePassword, profilePath: profilePath!, entitlements: entitlements!, completion: signFinish)

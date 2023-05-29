@@ -1,6 +1,5 @@
 //
-//  ALTPluginService.h
-//  AltPlugin
+//  AnisetteDataManager.h
 //
 
 
@@ -10,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ALTPluginService : NSObject
+@interface AnisetteDataManager : NSObject
 
-@property (class, nonatomic, readonly) ALTPluginService *sharedService;
+@property (class, nonatomic, readonly) AnisetteDataManager *shared;
 
 - (ALTAnisetteData *)requestAnisetteData;
 

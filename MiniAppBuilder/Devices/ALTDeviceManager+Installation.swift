@@ -160,69 +160,51 @@ extension ALTDeviceManager
         }
 
         print("Init the sign environment for " + appleID + "...");
-        AnisetteDataManager.shared.requestAnisetteData { (result) in
+        let anisetteData = AnisetteDataManager.shared.requestAnisetteData()
+        self.authenticate(appleID: appleID, password: password, anisetteData: anisetteData) { (result) in
             do
             {
-                let anisetteData = try result.get()
-                self.authenticate(appleID: appleID, password: password, anisetteData: anisetteData) { (result) in
+                let (account, session) = try result.get()
+                
+                self.fetchTeam(for: account, session: session) { (result) in
                     do
                     {
-                        let (account, session) = try result.get()
+                        let team = try result.get()
                         
-                        self.fetchTeam(for: account, session: session) { (result) in
+                        self.register(altDevice, team: team, session: session) { (result) in
                             do
                             {
-                                let team = try result.get()
+                                let device = try result.get()
+                                device.osVersion = altDevice.osVersion
                                 
-                                self.register(altDevice, team: team, session: session) { (result) in
+                                self.fetchCertificate(for: team, session: session) { (result) in
                                     do
                                     {
-                                        let device = try result.get()
-                                        device.osVersion = altDevice.osVersion
+                                        let certificate = try result.get()
+
+                                        let fileURL = ipaFileURL
                                         
-                                        self.fetchCertificate(for: team, session: session) { (result) in
+                                        try FileManager.default.createDirectory(at: destinationDirectoryURL, withIntermediateDirectories: true, attributes: nil)
+                                        // 解压ipa
+                                        var appBundleURL = try FileManager.default.unzipAppBundle(at: fileURL, toDirectory: destinationDirectoryURL)
+                                        guard let application = ALTApplication(fileURL: appBundleURL) else { throw ALTError(.invalidApp) }
+                                        
+                                        appName = application.name
+                                        
+                                        // Refresh anisette data to prevent session timeouts.
+                                        let anisetteData = AnisetteDataManager.shared.requestAnisetteData()
+                                        session.anisetteData = anisetteData
+                                        
+                                        self.prepareAllProvisioningProfiles(for: application, device: device, team: team, bundleId: bundleId, entitlements: entitlements, session: session) { (result) in
                                             do
                                             {
-                                                let certificate = try result.get()
-
-                                                let fileURL = ipaFileURL
-                                                
-                                                try FileManager.default.createDirectory(at: destinationDirectoryURL, withIntermediateDirectories: true, attributes: nil)
-                                                // 解压ipa
-                                                var appBundleURL = try FileManager.default.unzipAppBundle(at: fileURL, toDirectory: destinationDirectoryURL)
-                                                guard let application = ALTApplication(fileURL: appBundleURL) else { throw ALTError(.invalidApp) }
-                                                
-                                                appName = application.name
-                                                
-                                                // Refresh anisette data to prevent session timeouts.
-                                                AnisetteDataManager.shared.requestAnisetteData { (result) in
+                                                let profiles = try result.get()
+                                                self.signCore(application, certificate: certificate, profiles: profiles, entitlements: entitlements) { (result) in
                                                     do
                                                     {
-                                                        let anisetteData = try result.get()
-                                                        session.anisetteData = anisetteData
-                                                        
-                                                        self.prepareAllProvisioningProfiles(for: application, device: device, team: team, bundleId: bundleId, entitlements: entitlements, session: session) { (result) in
-                                                            do
-                                                            {
-                                                                let profiles = try result.get()
-                                                                self.signCore(application, certificate: certificate, profiles: profiles, entitlements: entitlements) { (result) in
-                                                                    do
-                                                                    {
-                                                                        let activeProfiles = try result.get()
-                                                                        guard let newApplication = ALTApplication(fileURL: application.fileURL) else { throw ALTError(.invalidApp) }
-                                                                        finish(.success((newApplication, activeProfiles)))
-                                                                    }
-                                                                    catch
-                                                                    {
-                                                                        finish(.failure(error))
-                                                                    }
-                                                                }
-                                                            }
-                                                            catch
-                                                            {
-                                                                finish(.failure(error), failure: NSLocalizedString("MIniAppBuilder could not fetch new provisioning profiles.", comment: ""))
-                                                            }
-                                                        }
+                                                        let activeProfiles = try result.get()
+                                                        guard let newApplication = ALTApplication(fileURL: application.fileURL) else { throw ALTError(.invalidApp) }
+                                                        finish(.success((newApplication, activeProfiles)))
                                                     }
                                                     catch
                                                     {
@@ -232,31 +214,31 @@ extension ALTDeviceManager
                                             }
                                             catch
                                             {
-                                                finish(.failure(error), failure: NSLocalizedString("A valid signing certificate could not be created.", comment: ""))
+                                                finish(.failure(error), failure: NSLocalizedString("MIniAppBuilder could not fetch new provisioning profiles.", comment: ""))
                                             }
                                         }
                                     }
                                     catch
                                     {
-                                        finish(.failure(error), failure: NSLocalizedString("Your device could not be registered with your development team.", comment: ""))
+                                        finish(.failure(error), failure: NSLocalizedString("A valid signing certificate could not be created.", comment: ""))
                                     }
                                 }
                             }
                             catch
                             {
-                                finish(.failure(error))
+                                finish(.failure(error), failure: NSLocalizedString("Your device could not be registered with your development team.", comment: ""))
                             }
                         }
                     }
                     catch
                     {
-                        finish(.failure(error), failure: NSLocalizedString("MiniAppBuilder could not sign in with your Apple ID.", comment: ""))
+                        finish(.failure(error))
                     }
                 }
             }
             catch
             {
-                finish(.failure(error))
+                finish(.failure(error), failure: NSLocalizedString("MiniAppBuilder could not sign in with your Apple ID.", comment: ""))
             }
         }
     }

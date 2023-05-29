@@ -100,10 +100,11 @@
 		BFD52C2022A1A9EC000B7ED1 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52C1D22A1A9EC000B7ED1 /* node.c */; };
 		BFD52C2122A1A9EC000B7ED1 /* node_list.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52C1E22A1A9EC000B7ED1 /* node_list.c */; };
 		BFD52C2222A1A9EC000B7ED1 /* cnary.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52C1F22A1A9EC000B7ED1 /* cnary.c */; };
-		CE4B74B129E94FEC00987862 /* MiniAppPlugin.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE4B74B029E94FB600987862 /* MiniAppPlugin.zip */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CE5105DC2A17869D00F34F59 /* input.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE5105DB2A1785E200F34F59 /* input.sh */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CE5105E02A17AC3C00F34F59 /* AppleAccount.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE5105DF2A17AC2C00F34F59 /* AppleAccount.sh */; };
 		CE5105E12A17AC3C00F34F59 /* AppleCertificate.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE5105DD2A17AC2C00F34F59 /* AppleCertificate.sh */; };
+		CE5E0E682A24BCF800AE7AD3 /* AOSKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E0E662A24BCD300AE7AD3 /* AOSKit.tbd */; };
+		CE5E0E6E2A24C31500AE7AD3 /* AnisetteDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E0E6D2A24C31500AE7AD3 /* AnisetteDataManager.m */; };
 		CE649C3729CDC33E009AD7E5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C3629CDC33E009AD7E5 /* main.swift */; };
 		CE649C3B29CDC388009AD7E5 /* ALTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF718BD723C93DB700A89F2D /* ALTConstants.m */; };
 		CE649C3C29CDC388009AD7E5 /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E3128229F474900370A3C /* ServerProtocol.swift */; };
@@ -122,16 +123,11 @@
 		CE649C6C29CDC3A5009AD7E5 /* ALTDeviceManager+Installation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C5229CDC3A4009AD7E5 /* ALTDeviceManager+Installation.swift */; };
 		CE649C6D29CDC3A5009AD7E5 /* FileManager+URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C5529CDC3A4009AD7E5 /* FileManager+URLs.swift */; };
 		CE649C6E29CDC3A5009AD7E5 /* UserDefaults+MiniAppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C5629CDC3A4009AD7E5 /* UserDefaults+MiniAppBuilder.swift */; };
-		CE649C6F29CDC3A5009AD7E5 /* AnisetteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C5729CDC3A4009AD7E5 /* AnisetteDataManager.swift */; };
-		CE649C7129CDC3A5009AD7E5 /* PluginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C5A29CDC3A4009AD7E5 /* PluginManager.swift */; };
 		CE649C7829CDC3A5009AD7E5 /* DeveloperDiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C6929CDC3A5009AD7E5 /* DeveloperDiskManager.swift */; };
 		CE649C7E29CDC3CA009AD7E5 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF088D322501A4FF008082D9 /* OpenSSL.xcframework */; };
 		CE649C8029CDC3F3009AD7E5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE649C7F29CDC3F3009AD7E5 /* libxml2.tbd */; };
 		CE649C8529D13D02009AD7E5 /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
 		CE769FE32A07A3BE00A2F9E7 /* ALTDebugConnection.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE769FE22A07A39E00A2F9E7 /* ALTDebugConnection.mm */; };
-		CE87A14829E7003800557926 /* ALTPluginService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87A14629E7003800557926 /* ALTPluginService.m */; };
-		CE87A14929E7003800557926 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE87A14729E7003800557926 /* Info.plist */; };
-		CE87A43B29E701C900557926 /* ALTAnisetteData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87A43929E701C800557926 /* ALTAnisetteData.m */; };
 		CE94633929DBCDEB0044F4E1 /* AltSign-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE94633829DBCDEB0044F4E1 /* AltSign-Dynamic */; };
 		CE94633A29DBCDEB0044F4E1 /* AltSign-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = CE94633829DBCDEB0044F4E1 /* AltSign-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -147,15 +143,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BF5C5FE9237E438C00EDD0C6 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CE68349F29D1F2B600840122 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,7 +152,6 @@
 				CE5105E02A17AC3C00F34F59 /* AppleAccount.sh in CopyFiles */,
 				CE5105E12A17AC3C00F34F59 /* AppleCertificate.sh in CopyFiles */,
 				CE5105DC2A17869D00F34F59 /* input.sh in CopyFiles */,
-				CE4B74B129E94FEC00987862 /* MiniAppPlugin.zip in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +245,6 @@
 		BF4588492298D55000BD7491 /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = thread.h; path = Dependencies/libusbmuxd/common/thread.h; sourceTree = SOURCE_ROOT; };
 		BF4588872298DD3F00BD7491 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		BF580497246A3D19008AE704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BF5C5FC5237DF5AE00EDD0C6 /* MiniAppPlugin.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniAppPlugin.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6C336124197D700034FD24 /* NSError+MiniAppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+MiniAppBuilder.swift"; sourceTree = "<group>"; };
 		BF718BC723C919CC00A89F2D /* CFNotificationName+AltStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CFNotificationName+AltStore.h"; sourceTree = "<group>"; };
 		BF718BC823C919E300A89F2D /* CFNotificationName+AltStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CFNotificationName+AltStore.m"; sourceTree = "<group>"; };
@@ -303,13 +288,16 @@
 		BFF435D7255CBDAB00DD724F /* ALTApplication+AltStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ALTApplication+AltStoreApp.swift"; sourceTree = "<group>"; };
 		BFF767CB2489AB5C0097E58C /* ALTServerError+Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ALTServerError+Conveniences.swift"; sourceTree = "<group>"; };
 		BFF767CD2489ABE90097E58C /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
-		BFF7C904257844C900E55F36 /* MiniAppXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = MiniAppXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF7C906257844C900E55F36 /* AltXPCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AltXPCProtocol.h; sourceTree = "<group>"; };
-		CE4B74B029E94FB600987862 /* MiniAppPlugin.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = MiniAppPlugin.zip; sourceTree = "<group>"; };
 		CE5105DB2A1785E200F34F59 /* input.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = input.sh; sourceTree = "<group>"; };
 		CE5105DD2A17AC2C00F34F59 /* AppleCertificate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = AppleCertificate.sh; sourceTree = "<group>"; };
 		CE5105DE2A17AC2C00F34F59 /* input.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = input.sh; sourceTree = "<group>"; };
 		CE5105DF2A17AC2C00F34F59 /* AppleAccount.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = AppleAccount.sh; sourceTree = "<group>"; };
+		CE5E0E662A24BCD300AE7AD3 /* AOSKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = AOSKit.tbd; sourceTree = "<group>"; };
+		CE5E0E672A24BCD300AE7AD3 /* AOSUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOSUtilities.h; sourceTree = "<group>"; };
+		CE5E0E6A2A24C23000AE7AD3 /* ALTAnisetteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALTAnisetteData.h; path = "Dependencies/AltSign/AltSign/Model/Apple API/ALTAnisetteData.h"; sourceTree = SOURCE_ROOT; };
+		CE5E0E6C2A24C31500AE7AD3 /* AnisetteDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnisetteDataManager.h; sourceTree = "<group>"; };
+		CE5E0E6D2A24C31500AE7AD3 /* AnisetteDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnisetteDataManager.m; sourceTree = "<group>"; };
 		CE649C3429CDC33C009AD7E5 /* MiniAppBuilder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MiniAppBuilder; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE649C3629CDC33E009AD7E5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE649C4E29CDC3A4009AD7E5 /* NSError+libimobiledevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+libimobiledevice.h"; sourceTree = "<group>"; };
@@ -319,8 +307,6 @@
 		CE649C5329CDC3A4009AD7E5 /* ALTDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTDeviceManager.h; sourceTree = "<group>"; };
 		CE649C5529CDC3A4009AD7E5 /* FileManager+URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+URLs.swift"; sourceTree = "<group>"; };
 		CE649C5629CDC3A4009AD7E5 /* UserDefaults+MiniAppBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+MiniAppBuilder.swift"; sourceTree = "<group>"; };
-		CE649C5729CDC3A4009AD7E5 /* AnisetteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnisetteDataManager.swift; sourceTree = "<group>"; };
-		CE649C5A29CDC3A4009AD7E5 /* PluginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginManager.swift; sourceTree = "<group>"; };
 		CE649C6829CDC3A5009AD7E5 /* MiniAppBuilder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MiniAppBuilder-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE649C6929CDC3A5009AD7E5 /* DeveloperDiskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperDiskManager.swift; sourceTree = "<group>"; };
 		CE649C7F29CDC3F3009AD7E5 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
@@ -329,11 +315,6 @@
 		CE769FE12A07A39E00A2F9E7 /* ALTDebugConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTDebugConnection.h; sourceTree = "<group>"; };
 		CE769FE22A07A39E00A2F9E7 /* ALTDebugConnection.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ALTDebugConnection.mm; sourceTree = "<group>"; };
 		CE79FBC22A0B9DF200D5CBF7 /* libswift_Concurrency.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswift_Concurrency.tbd; path = usr/lib/swift/libswift_Concurrency.tbd; sourceTree = SDKROOT; };
-		CE87A14529E7003800557926 /* ALTPluginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTPluginService.h; sourceTree = "<group>"; };
-		CE87A14629E7003800557926 /* ALTPluginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTPluginService.m; sourceTree = "<group>"; };
-		CE87A14729E7003800557926 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE87A43929E701C800557926 /* ALTAnisetteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALTAnisetteData.m; path = "Dependencies/AltSign/AltSign/Model/Apple API/ALTAnisetteData.m"; sourceTree = SOURCE_ROOT; };
-		CE87A43A29E701C800557926 /* ALTAnisetteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALTAnisetteData.h; path = "Dependencies/AltSign/AltSign/Model/Apple API/ALTAnisetteData.h"; sourceTree = SOURCE_ROOT; };
 		D51AD27C29356B7B00967AAA /* ALTWrappedError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTWrappedError.h; sourceTree = "<group>"; };
 		D51AD27D29356B7B00967AAA /* ALTWrappedError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALTWrappedError.m; sourceTree = "<group>"; };
 		D533E8B62727841800A9B5DD /* libAppleArchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libAppleArchive.tbd; path = usr/lib/libAppleArchive.tbd; sourceTree = SDKROOT; };
@@ -351,24 +332,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF5C5FC2237DF5AE00EDD0C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFF7C901257844C900E55F36 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CE649C3129CDC33C009AD7E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5E0E682A24BCF800AE7AD3 /* AOSKit.tbd in Frameworks */,
 				CE649C8529D13D02009AD7E5 /* libimobiledevice.a in Frameworks */,
 				CE649C8029CDC3F3009AD7E5 /* libxml2.tbd in Frameworks */,
 				CE649C7E29CDC3CA009AD7E5 /* OpenSSL.xcframework in Frameworks */,
@@ -558,7 +526,6 @@
 			isa = PBXGroup;
 			children = (
 				CE4B74AF29E94FB600987862 /* Resources */,
-				CE87A14429E7003800557926 /* MiniAppPlugin */,
 				BF1E315122A0616100370A3C /* Shared */,
 				BF45872C2298D31600BD7491 /* libimobiledevice */,
 				CE649C3529CDC33E009AD7E5 /* MiniAppBuilder */,
@@ -573,8 +540,6 @@
 			isa = PBXGroup;
 			children = (
 				BF45872B2298D31600BD7491 /* libimobiledevice.a */,
-				BF5C5FC5237DF5AE00EDD0C6 /* MiniAppPlugin.mailbundle */,
-				BFF7C904257844C900E55F36 /* MiniAppXPC.xpc */,
 				CE649C3429CDC33C009AD7E5 /* MiniAppBuilder */,
 			);
 			name = Products;
@@ -650,27 +615,37 @@
 		CE4B74AF29E94FB600987862 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CE4B74B029E94FB600987862 /* MiniAppPlugin.zip */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
 		};
+		CE5E0E652A24BCD300AE7AD3 /* AOSKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E0E662A24BCD300AE7AD3 /* AOSKit.tbd */,
+				CE5E0E672A24BCD300AE7AD3 /* AOSUtilities.h */,
+			);
+			path = AOSKit;
+			sourceTree = "<group>";
+		};
 		CE649C3529CDC33E009AD7E5 /* MiniAppBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				CE5E0E6A2A24C23000AE7AD3 /* ALTAnisetteData.h */,
+				CE5E0E652A24BCD300AE7AD3 /* AOSKit */,
 				CE649C9029D19092009AD7E5 /* MiniAppBuilder.entitlements */,
 				CE769FDF2A07A39E00A2F9E7 /* Connections */,
 				CE649C6829CDC3A5009AD7E5 /* MiniAppBuilder-Bridging-Header.h */,
 				CE5105DB2A1785E200F34F59 /* input.sh */,
 				CE5105DF2A17AC2C00F34F59 /* AppleAccount.sh */,
+				CE5E0E6C2A24C31500AE7AD3 /* AnisetteDataManager.h */,
+				CE5E0E6D2A24C31500AE7AD3 /* AnisetteDataManager.m */,
 				CE5105DD2A17AC2C00F34F59 /* AppleCertificate.sh */,
 				CE5105DE2A17AC2C00F34F59 /* input.sh */,
-				CE649C5729CDC3A4009AD7E5 /* AnisetteDataManager.swift */,
 				CE649C4D29CDC3A4009AD7E5 /* Categories */,
 				CE649C6929CDC3A5009AD7E5 /* DeveloperDiskManager.swift */,
 				CE649C5029CDC3A4009AD7E5 /* Devices */,
 				CE649C5429CDC3A4009AD7E5 /* Extensions */,
-				CE649C5829CDC3A4009AD7E5 /* Plugin */,
 				CE649C3629CDC33E009AD7E5 /* main.swift */,
 			);
 			path = MiniAppBuilder;
@@ -704,14 +679,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CE649C5829CDC3A4009AD7E5 /* Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				CE649C5A29CDC3A4009AD7E5 /* PluginManager.swift */,
-			);
-			path = Plugin;
-			sourceTree = "<group>";
-		};
 		CE769FDF2A07A39E00A2F9E7 /* Connections */ = {
 			isa = PBXGroup;
 			children = (
@@ -720,18 +687,6 @@
 				CE769FE22A07A39E00A2F9E7 /* ALTDebugConnection.mm */,
 			);
 			path = Connections;
-			sourceTree = "<group>";
-		};
-		CE87A14429E7003800557926 /* MiniAppPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				CE87A43A29E701C800557926 /* ALTAnisetteData.h */,
-				CE87A43929E701C800557926 /* ALTAnisetteData.m */,
-				CE87A14529E7003800557926 /* ALTPluginService.h */,
-				CE87A14629E7003800557926 /* ALTPluginService.m */,
-				CE87A14729E7003800557926 /* Info.plist */,
-			);
-			path = MiniAppPlugin;
 			sourceTree = "<group>";
 		};
 		D5DB145728F9DC0300A8F606 /* Errors */ = {
@@ -812,41 +767,6 @@
 			productReference = BF45872B2298D31600BD7491 /* libimobiledevice.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BF5C5FC4237DF5AE00EDD0C6 /* MiniAppPlugin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BF5C5FC8237DF5AE00EDD0C6 /* Build configuration list for PBXNativeTarget "MiniAppPlugin" */;
-			buildPhases = (
-				BF5C5FC1237DF5AE00EDD0C6 /* Sources */,
-				BF5C5FC2237DF5AE00EDD0C6 /* Frameworks */,
-				BF5C5FC3237DF5AE00EDD0C6 /* Resources */,
-				BF5C5FE9237E438C00EDD0C6 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MiniAppPlugin;
-			productName = AltPlugin;
-			productReference = BF5C5FC5237DF5AE00EDD0C6 /* MiniAppPlugin.mailbundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		BFF7C903257844C900E55F36 /* MiniAppXPC */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFF7C913257844C900E55F36 /* Build configuration list for PBXNativeTarget "MiniAppXPC" */;
-			buildPhases = (
-				BFF7C900257844C900E55F36 /* Sources */,
-				BFF7C901257844C900E55F36 /* Frameworks */,
-				BFF7C902257844C900E55F36 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MiniAppXPC;
-			productName = MiniAppXPC;
-			productReference = BFF7C904257844C900E55F36 /* MiniAppXPC.xpc */;
-			productType = "com.apple.product-type.xpc-service";
-		};
 		CE649C3329CDC33C009AD7E5 /* MiniAppBuilder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE649C3829CDC33E009AD7E5 /* Build configuration list for PBXNativeTarget "MiniAppBuilder" */;
@@ -883,14 +803,6 @@
 					BF45872A2298D31600BD7491 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					BF5C5FC4237DF5AE00EDD0C6 = {
-						CreatedOnToolsVersion = 11.2;
-						LastSwiftMigration = 1120;
-					};
-					BFF7C903257844C900E55F36 = {
-						CreatedOnToolsVersion = 12.3;
-						LastSwiftMigration = 1230;
-					};
 					CE649C3329CDC33C009AD7E5 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -913,29 +825,9 @@
 			targets = (
 				CE649C3329CDC33C009AD7E5 /* MiniAppBuilder */,
 				BF45872A2298D31600BD7491 /* libimobiledevice */,
-				BF5C5FC4237DF5AE00EDD0C6 /* MiniAppPlugin */,
-				BFF7C903257844C900E55F36 /* MiniAppXPC */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		BF5C5FC3237DF5AE00EDD0C6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE87A14929E7003800557926 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFF7C902257844C900E55F36 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		66BB84DD3D678DA115BB6CCA /* [CP] Check Pods Manifest.lock */ = {
@@ -1024,28 +916,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF5C5FC1237DF5AE00EDD0C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE87A43B29E701C900557926 /* ALTAnisetteData.m in Sources */,
-				CE87A14829E7003800557926 /* ALTPluginService.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFF7C900257844C900E55F36 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CE649C3029CDC33C009AD7E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE769FE32A07A3BE00A2F9E7 /* ALTDebugConnection.mm in Sources */,
 				CE649C3B29CDC388009AD7E5 /* ALTConstants.m in Sources */,
+				CE5E0E6E2A24C31500AE7AD3 /* AnisetteDataManager.m in Sources */,
 				CE649C6E29CDC3A5009AD7E5 /* UserDefaults+MiniAppBuilder.swift in Sources */,
 				CE649C7829CDC3A5009AD7E5 /* DeveloperDiskManager.swift in Sources */,
 				CE649C3C29CDC388009AD7E5 /* ServerProtocol.swift in Sources */,
@@ -1062,8 +939,6 @@
 				CE649C4A29CDC388009AD7E5 /* OperatingSystemVersion+Comparable.swift in Sources */,
 				CE649C4B29CDC388009AD7E5 /* NSError+ALTServerError.m in Sources */,
 				CE649C6B29CDC3A5009AD7E5 /* ALTDeviceManager.mm in Sources */,
-				CE649C6F29CDC3A5009AD7E5 /* AnisetteDataManager.swift in Sources */,
-				CE649C7129CDC3A5009AD7E5 /* PluginManager.swift in Sources */,
 				CE649C3729CDC33E009AD7E5 /* main.swift in Sources */,
 				CE649C6C29CDC3A5009AD7E5 /* ALTDeviceManager+Installation.swift in Sources */,
 			);
@@ -1153,71 +1028,6 @@
 				PRODUCT_NAME = imobiledevice;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		BF5C5FC9237DF5AE00EDD0C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = D5ZVDUJRKG;
-				INFOPLIST_FILE = MiniAppPlugin/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Mail/Bundles/";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-					"/Users/Riley/Library/Developer/Xcode/DerivedData/AltStore-bhqnkrahfutztzeudtxhcxccgtlo/Build/Products/Debug",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.miniAppPlugin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				WRAPPER_EXTENSION = mailbundle;
-			};
-			name = Debug;
-		};
-		BF5C5FCA237DF5AE00EDD0C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = D5ZVDUJRKG;
-				INFOPLIST_FILE = MiniAppPlugin/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Mail/Bundles/";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-					"/Users/Riley/Library/Developer/Xcode/DerivedData/AltStore-bhqnkrahfutztzeudtxhcxccgtlo/Build/Products/Debug",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.miniAppPlugin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = NO;
-				SWIFT_VERSION = 5.0;
-				WRAPPER_EXTENSION = mailbundle;
 			};
 			name = Release;
 		};
@@ -1351,64 +1161,6 @@
 			};
 			name = Release;
 		};
-		BFF7C911257844C900E55F36 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_ENTITLEMENTS = MiniAppXPC/MiniAppXPC.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = D5ZVDUJRKG;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = MiniAppXPC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.miniAppXPC;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MiniAppXPC/MiniAppXPC-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		BFF7C912257844C900E55F36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_ENTITLEMENTS = MiniAppXPC/MiniAppXPC.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = MiniAppXPC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.miniAppXPC;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MiniAppXPC/MiniAppXPC-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 		CE649C3929CDC33E009AD7E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0BE79CB125D3E6B5EB64436 /* Pods-MiniAppBuilder.debug.xcconfig */;
@@ -1458,6 +1210,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/swift",
+					"$(PROJECT_DIR)/MiniAppBuilder/AOSKit",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.miniappBuilder;
@@ -1522,6 +1275,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/swift",
+					"$(PROJECT_DIR)/MiniAppBuilder/AOSKit",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.miniappBuilder;
@@ -1547,29 +1301,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF5C5FC8237DF5AE00EDD0C6 /* Build configuration list for PBXNativeTarget "MiniAppPlugin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BF5C5FC9237DF5AE00EDD0C6 /* Debug */,
-				BF5C5FCA237DF5AE00EDD0C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		BFD247652284B9A500981D42 /* Build configuration list for PBXProject "MiniAppBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFD2477C2284B9A700981D42 /* Debug */,
 				BFD2477D2284B9A700981D42 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFF7C913257844C900E55F36 /* Build configuration list for PBXNativeTarget "MiniAppXPC" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFF7C911257844C900E55F36 /* Debug */,
-				BFF7C912257844C900E55F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

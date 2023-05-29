@@ -39,22 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BD4D4B56-EB7A-408B-851A-B47B12256592"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MiniAppBuilder/AnisetteDataManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "requestAnisetteDataFromPlugin(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "12F74BE0-CF78-4BAF-A9D6-043266F055E4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -62,57 +46,10 @@
             filePath = "MiniAppBuilder/AnisetteDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "handleAnisetteDataResponse(_:)"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "requestAnisetteDataFromPlugin(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "12F74BE0-CF78-4BAF-A9D6-043266F055E4 - d54f3ff38761618f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MiniAppBuilder.AnisetteDataManager.handleAnisetteDataResponse(Foundation.Notification) -&gt; ()"
-                  moduleName = "MiniAppBuilder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonnyyu/Desktop/work/miniapp-ios-builder/MiniAppBuilder/AnisetteDataManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "177">
-               </Location>
-               <Location
-                  uuid = "12F74BE0-CF78-4BAF-A9D6-043266F055E4 - d54f3ff38761618f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MiniAppBuilder.AnisetteDataManager.handleAnisetteDataResponse(Foundation.Notification) -&gt; ()"
-                  moduleName = "MiniAppBuilder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonnyyu/Desktop/work/miniapp-ios-builder/MiniAppBuilder/AnisetteDataManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "238">
-               </Location>
-               <Location
-                  uuid = "12F74BE0-CF78-4BAF-A9D6-043266F055E4 - d54f3ff38761618f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MiniAppBuilder.AnisetteDataManager.handleAnisetteDataResponse(Foundation.Notification) -&gt; ()"
-                  moduleName = "MiniAppBuilder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonnyyu/Desktop/work/miniapp-ios-builder/MiniAppBuilder/AnisetteDataManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "641">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -125,9 +62,9 @@
             filePath = "MiniAppBuilder/AnisetteDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "finishRequest(forUUID:result:)"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "handleAnisetteDataResponse(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -173,10 +110,8 @@
             filePath = "MiniAppBuilder/AnisetteDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "finishRequest(forUUID:result:)"
-            landmarkType = "7">
+            startingLineNumber = "171"
+            endingLineNumber = "171">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -287,7 +222,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "326"
             endingLineNumber = "326"
-            landmarkName = "signWithCertificate(at:certificatePath:certificatePassword:profilePath:entitlements:completion:)"
+            landmarkName = "prepareDevice(_:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -303,8 +238,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "331"
             endingLineNumber = "331"
-            landmarkName = "ALTDeviceManager"
-            landmarkType = "21">
+            landmarkName = "prepareDevice(_:completionHandler:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "A540450C-E095-4425-92A1-82E521E80487 - 2137ee0ee8d5f40d"
@@ -351,7 +286,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "320"
             endingLineNumber = "320"
-            landmarkName = "signWithCertificate(at:certificatePath:certificatePassword:profilePath:entitlements:completion:)"
+            landmarkName = "prepareDevice(_:completionHandler:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -399,7 +334,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "321"
             endingLineNumber = "321"
-            landmarkName = "signWithCertificate(at:certificatePath:certificatePassword:profilePath:entitlements:completion:)"
+            landmarkName = "prepareDevice(_:completionHandler:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -462,7 +397,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "327"
             endingLineNumber = "327"
-            landmarkName = "signWithCertificate(at:certificatePath:certificatePassword:profilePath:entitlements:completion:)"
+            landmarkName = "prepareDevice(_:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -686,8 +621,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "577"
             endingLineNumber = "577"
-            landmarkName = "ALTDeviceManager"
-            landmarkType = "21">
+            landmarkName = "prepareProvisioningProfile(for:parentApp:device:team:bundleId:entitlements:session:completionHandler:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "01B6DB01-62C3-40A7-8AF2-5419B9A5936C - 1fc34553af096bb9"
@@ -878,8 +813,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "824"
             endingLineNumber = "824"
-            landmarkName = "fetchProvisioningProfile(for:device:team:session:completionHandler:)"
-            landmarkType = "7">
+            landmarkName = "prepare(_:additionalInfoDictionaryValues:)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1006,8 +941,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "664"
             endingLineNumber = "664"
-            landmarkName = "ALTDeviceManager"
-            landmarkType = "21">
+            landmarkName = "updateFeatures(for:app:team:entitlements:session:completionHandler:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "D5CF537F-84E4-445B-8E3B-DD4D18A03A88 - ba4584de53aaba39"
@@ -1102,7 +1037,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "711"
             endingLineNumber = "711"
-            landmarkName = "updateFeatures(for:app:team:entitlements:session:completionHandler:)"
+            landmarkName = "updateAppGroups(for:app:team:session:completionHandler:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1150,7 +1085,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "712"
             endingLineNumber = "712"
-            landmarkName = "updateFeatures(for:app:team:entitlements:session:completionHandler:)"
+            landmarkName = "updateAppGroups(for:app:team:session:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1311,6 +1246,86 @@
             startingLineNumber = "158"
             endingLineNumber = "158"
             landmarkName = "launch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE9E5AD3-57AD-4266-B426-52062E1E018A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiniAppBuilder/AnisetteDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "handleAnisetteDataResponse(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "886FCA89-3B87-4258-9B37-F8C98BCF7738"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiniAppBuilder/Plugin/ALTPluginService.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-requestAnisetteData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40F00643-2289-4F26-98C5-AD451C5A3E54"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiniAppBuilder/Plugin/ALTPluginService.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-requestAnisetteData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7DAB7D9-855E-4A9C-8526-86AECCB9D242"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiniAppBuilder/Plugin/ALTPluginService.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "-requestAnisetteData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A058091F-7EFD-47E1-A79A-2EBF5631C939"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiniAppBuilder/Plugin/ALTPluginService.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-requestAnisetteData"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

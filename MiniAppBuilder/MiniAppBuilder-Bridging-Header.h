@@ -9,3 +9,4 @@
 #import "AltXPCProtocol.h"
 #import "ALTWrappedError.h"
 #import "NSError+ALTServerError.h"
+#import "AnisetteDataManager.h"
