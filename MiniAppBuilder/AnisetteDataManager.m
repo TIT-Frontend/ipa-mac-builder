@@ -8,7 +8,7 @@
 #import <dlfcn.h>
 
 #import "ALTAnisetteData.h"
-#import "AOSUtilities.h"
+// #import "AOSUtilities.h"
 
 
 @import AppKit;
@@ -23,6 +23,14 @@
 - (nullable NSString *)serialNumber;
 - (NSString *)serverFriendlyDescription;
 @end
+
+@interface AOSUtilities : NSObject
++ (id)currentComputerName;
++ (id)machineUDID;
++ (id)machineSerialNumber;
++ (id)retrieveOTPHeadersForDSID:(id)arg1;
+@end
+
 
 @interface AnisetteDataManager ()
 
@@ -84,14 +92,15 @@
 {
     NSString *clientTime = [self.dateFormatter stringFromDate:[NSDate date]];
     NSDate *date = [self.dateFormatter dateFromString: clientTime];
-    NSDictionary *info = (NSDictionary *)[AOSUtilities retrieveOTPHeadersForDSID:@"-2"];
+    Class aosUtilities = NSClassFromString(@"AOSUtilities");
+    NSDictionary *info = (NSDictionary *)[aosUtilities retrieveOTPHeadersForDSID:@"-2"];
     NSString *machineID = [info objectForKey: @"X-Apple-MD-M"];
     NSString *oneTimePassword = [info objectForKey: @"X-Apple-MD"];
     NSString *localUserID = @"";
     NSString *deviceDescription = [self getDeviceDescription];
     unsigned long long routingInfo = 17106176;
-    NSString *machineUDID = [AOSUtilities machineUDID];
-    NSString *machineSerialNumber = [AOSUtilities machineSerialNumber];
+    NSString *machineUDID = [aosUtilities machineUDID];
+    NSString *machineSerialNumber = [aosUtilities machineSerialNumber];
     
     ALTAnisetteData *anisetteData = [[NSClassFromString(@"ALTAnisetteData") alloc] initWithMachineID: machineID
                                                                                      oneTimePassword: oneTimePassword

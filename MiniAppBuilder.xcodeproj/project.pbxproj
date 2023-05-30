@@ -103,7 +103,6 @@
 		CE5105DC2A17869D00F34F59 /* input.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE5105DB2A1785E200F34F59 /* input.sh */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CE5105E02A17AC3C00F34F59 /* AppleAccount.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE5105DF2A17AC2C00F34F59 /* AppleAccount.sh */; };
 		CE5105E12A17AC3C00F34F59 /* AppleCertificate.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE5105DD2A17AC2C00F34F59 /* AppleCertificate.sh */; };
-		CE5E0E682A24BCF800AE7AD3 /* AOSKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E0E662A24BCD300AE7AD3 /* AOSKit.tbd */; };
 		CE5E0E6E2A24C31500AE7AD3 /* AnisetteDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E0E6D2A24C31500AE7AD3 /* AnisetteDataManager.m */; };
 		CE649C3729CDC33E009AD7E5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C3629CDC33E009AD7E5 /* main.swift */; };
 		CE649C3B29CDC388009AD7E5 /* ALTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF718BD723C93DB700A89F2D /* ALTConstants.m */; };
@@ -336,7 +335,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5E0E682A24BCF800AE7AD3 /* AOSKit.tbd in Frameworks */,
 				CE649C8529D13D02009AD7E5 /* libimobiledevice.a in Frameworks */,
 				CE649C8029CDC3F3009AD7E5 /* libxml2.tbd in Frameworks */,
 				CE649C7E29CDC3CA009AD7E5 /* OpenSSL.xcframework in Frameworks */,
