@@ -8,7 +8,6 @@
 #import "ALTAnisetteData.h"
 #import "ALTDebugConnection+Private.h"
 
-#import "ALTConstants.h"
 #import "NSError+ALTServerError.h"
 #import "NSError+libimobiledevice.h"
 

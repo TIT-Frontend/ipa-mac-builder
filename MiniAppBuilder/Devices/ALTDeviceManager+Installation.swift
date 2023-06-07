@@ -486,8 +486,34 @@ private extension ALTDeviceManager
                 }
                 
                 // 已安装的话先撤销再重新安装
-                if let certificate = miniappCertificate
+                if let certificate = miniappCertificate ?? certificates.first
                 {
+                    if team.type != .free
+                    {
+                        DispatchQueue.main.sync {
+                            let alert = NSAlert()
+                            alert.messageText = NSLocalizedString("Installing this app will revoke your iOS development certificate.", comment: "")
+                            alert.informativeText = NSLocalizedString("""
+    This will not affect apps you've submitted to the App Store, but may cause apps you've installed to your devices with Xcode to stop working until you reinstall them.
+
+    To prevent this from happening, feel free to try again with another Apple ID.
+    """, comment: "")
+                            
+                            alert.addButton(withTitle: NSLocalizedString("Continue", comment: ""))
+                            alert.addButton(withTitle: NSLocalizedString("Cancel", comment: ""))
+                            
+                            NSRunningApplication.current.activate(options: .activateIgnoringOtherApps)
+                            
+                            let buttonIndex = alert.runModal()
+                            if buttonIndex == NSApplication.ModalResponse.alertSecondButtonReturn
+                            {
+                                isCancelled = true
+                            }
+                        }
+                        
+                        guard !isCancelled else { return completionHandler(.failure(OperationError(.cancelled))) }
+                    }
+
                     ALTAppleAPI.shared.revoke(certificate, for: team, session: session) { (success, error) in
                         do
                         {

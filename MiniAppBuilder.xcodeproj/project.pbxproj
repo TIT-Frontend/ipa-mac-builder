@@ -105,7 +105,6 @@
 		CE5105E12A17AC3C00F34F59 /* AppleCertificate.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE5105DD2A17AC2C00F34F59 /* AppleCertificate.sh */; };
 		CE5E0E6E2A24C31500AE7AD3 /* AnisetteDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E0E6D2A24C31500AE7AD3 /* AnisetteDataManager.m */; };
 		CE649C3729CDC33E009AD7E5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C3629CDC33E009AD7E5 /* main.swift */; };
-		CE649C3B29CDC388009AD7E5 /* ALTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF718BD723C93DB700A89F2D /* ALTConstants.m */; };
 		CE649C3C29CDC388009AD7E5 /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E3128229F474900370A3C /* ServerProtocol.swift */; };
 		CE649C3D29CDC388009AD7E5 /* CodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD44605241188C300EAB90A /* CodableError.swift */; };
 		CE649C4229CDC388009AD7E5 /* ALTLocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB145828F9DC1000A8F606 /* ALTLocalizedError.swift */; };
@@ -919,7 +918,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE769FE32A07A3BE00A2F9E7 /* ALTDebugConnection.mm in Sources */,
-				CE649C3B29CDC388009AD7E5 /* ALTConstants.m in Sources */,
 				CE5E0E6E2A24C31500AE7AD3 /* AnisetteDataManager.m in Sources */,
 				CE649C6E29CDC3A5009AD7E5 /* UserDefaults+MiniAppBuilder.swift in Sources */,
 				CE649C7829CDC3A5009AD7E5 /* DeveloperDiskManager.swift in Sources */,
