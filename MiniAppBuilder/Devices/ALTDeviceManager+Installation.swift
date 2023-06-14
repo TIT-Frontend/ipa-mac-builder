@@ -358,8 +358,8 @@ private extension ALTDeviceManager
         func handleVerificationCode(_ completionHandler: @escaping (String?) -> Void)
         {
             let executableURL = URL(fileURLWithPath: CommandLine.arguments[0])
-            let inputCommand = executableURL.deletingLastPathComponent().appendingPathComponent("input.sh").path
-            let inputOutput = executeCommand("\"\(inputCommand)\" \"Please enter your verificationCode:\"")
+            let inputCommand = executableURL.deletingLastPathComponent().appendingPathComponent("Dialog.sh").path
+            let inputOutput = executeCommand("\"\(inputCommand)\" \"Input\" \"请输入验证码:\"")
             if let input = inputOutput {
                 let inputLines = input.split(separator: "\n")
                 if inputLines.count < 1  {
@@ -422,7 +422,6 @@ private extension ALTDeviceManager
         ALTAppleAPI.shared.fetchCertificates(for: team, session: session) { (certificates, error) in
             do
             {
-                var isCancelled = false
                 let certificates = try Result(certificates, error).get()
                 
                 let certificateFileURL = FileManager.default.certificatesDirectory.appendingPathComponent(team.identifier + ".p12")
@@ -486,35 +485,34 @@ private extension ALTDeviceManager
                 }
                 
                 // 已安装的话先撤销再重新安装
-                if let certificate = miniappCertificate ?? certificates.first
-                {
-                    if team.type != .free
+                var certificate: ALTCertificate? = nil
+                if (miniappCertificate != nil) {
+                     certificate = miniappCertificate
+                } else if(certificates.first != nil) {
+                     if team.type != .free
                     {
-                        DispatchQueue.main.sync {
-                            let alert = NSAlert()
-                            alert.messageText = NSLocalizedString("Installing this app will revoke your iOS development certificate.", comment: "")
-                            alert.informativeText = NSLocalizedString("""
-    This will not affect apps you've submitted to the App Store, but may cause apps you've installed to your devices with Xcode to stop working until you reinstall them.
-
-    To prevent this from happening, feel free to try again with another Apple ID.
-    """, comment: "")
-                            
-                            alert.addButton(withTitle: NSLocalizedString("Continue", comment: ""))
-                            alert.addButton(withTitle: NSLocalizedString("Cancel", comment: ""))
-                            
-                            NSRunningApplication.current.activate(options: .activateIgnoringOtherApps)
-                            
-                            let buttonIndex = alert.runModal()
-                            if buttonIndex == NSApplication.ModalResponse.alertSecondButtonReturn
-                            {
-                                isCancelled = true
+                        let executableURL = URL(fileURLWithPath: CommandLine.arguments[0])
+                        let inputCommand = executableURL.deletingLastPathComponent().appendingPathComponent("Dialog.sh").path
+                        let inputOutput = executeCommand("\"\(inputCommand)\" \"AppleCertificateRevoke\"")
+                        if let input = inputOutput {
+                            let inputLines = input.split(separator: "\n")
+                            if inputLines.count < 1 ||  String(inputLines[0]) == ""  {
+                               return completionHandler(.failure(OperationError(.cancelled)))
                             }
+                            if (String(inputLines[0]) == "OK") {
+                                certificate = certificates.first
+                            } else {
+                                certificate = nil
+                            }
+                        } else {
+                            return completionHandler(.failure(OperationError(.cancelled)))
                         }
-                        
-                        guard !isCancelled else { return completionHandler(.failure(OperationError(.cancelled))) }
+                    } else {
+                        certificate = certificates.first
                     }
-
-                    ALTAppleAPI.shared.revoke(certificate, for: team, session: session) { (success, error) in
+                }
+                if (certificate != nil) {
+                    ALTAppleAPI.shared.revoke(certificate!, for: team, session: session) { (success, error) in
                         do
                         {
                             try Result(success, error).get()
@@ -525,9 +523,7 @@ private extension ALTDeviceManager
                             completionHandler(.failure(error))
                         }
                     }
-                }
-                else
-                {
+                } else {
                     addCertificate()
                 }
             }

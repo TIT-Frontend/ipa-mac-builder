@@ -134,8 +134,8 @@ class Application: NSObject {
                }
                if username == nil || password == nil {
                     let executableURL = URL(fileURLWithPath: CommandLine.arguments[0])
-                    let inputCommand = executableURL.deletingLastPathComponent().appendingPathComponent("AppleAccount.sh").path
-                    let inputOutput = executeCommand("\"\(inputCommand)\"")
+                    let inputCommand = executableURL.deletingLastPathComponent().appendingPathComponent("Dialog.sh").path
+                    let inputOutput = executeCommand("\"\(inputCommand)\" \"AppleAccount\"")
                     if let input = inputOutput {
                         let inputLines = input.split(separator: "\n")
                         if inputLines.count < 3  {
@@ -166,8 +166,8 @@ class Application: NSObject {
                 }
                 if certificatePath == nil || profilePath == nil {
                     let executableURL = URL(fileURLWithPath: CommandLine.arguments[0])
-                    let inputCommand = executableURL.deletingLastPathComponent().appendingPathComponent("AppleCertificate.sh").path
-                    let inputOutput = executeCommand("\"\(inputCommand)\"")
+                    let inputCommand = executableURL.deletingLastPathComponent().appendingPathComponent("Dialog.sh").path
+                    let inputOutput = executeCommand("\"\(inputCommand)\" AppleCertificate")
                     if let input = inputOutput {
                         let inputLines = input.split(separator: "\n")
                         if inputLines.count < 4  {

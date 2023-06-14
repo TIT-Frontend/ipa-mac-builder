@@ -73,7 +73,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/jonnyyu/Desktop/Payload.ipa"
+            argument = "/Users/yoasatada/Desktop/Payload.ipa"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -93,7 +93,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "auto"
+            argument = "com.tencent.devtoolscommunityapp.db"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
