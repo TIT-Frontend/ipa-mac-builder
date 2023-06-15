@@ -30,12 +30,14 @@ extension OperationError
         case noTeam
         case missingPrivateKey
         case missingCertificate
+        case parseCertificateFailed
     }
     
     static let cancelled = OperationError(code: .cancelled)
     static let noTeam = OperationError(code: .noTeam)
     static let missingPrivateKey = OperationError(code: .missingPrivateKey)
     static let missingCertificate = OperationError(code: .missingCertificate)
+    static let parseCertificateFailed = OperationError(code: .parseCertificateFailed)
 }
 
 struct OperationError: ALTLocalizedError
@@ -51,6 +53,7 @@ struct OperationError: ALTLocalizedError
         case .noTeam: return NSLocalizedString("You are not a member of any developer teams.", comment: "")
         case .missingPrivateKey: return NSLocalizedString("The developer certificate's private key could not be found.", comment: "")
         case .missingCertificate: return NSLocalizedString("The developer certificate could not be found.", comment: "")
+        case .parseCertificateFailed: return NSLocalizedString("parse the certificate fail", comment: "")
         }
     }
 }
@@ -300,7 +303,7 @@ extension ALTDeviceManager
                 }
             } else {
                 printStdErr("parse certificate fail")
-                // finish(.failure(error))
+                 finish(.failure(ALTError(.parseCertificateFailed)))
             }
         }
         catch

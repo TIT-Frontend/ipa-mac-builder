@@ -87,7 +87,7 @@
         NSDictionary<ALTEntitlement, id> *entitlements = dictionary[@"Entitlements"];
         NSArray<NSString *> *deviceIDs = dictionary[@"ProvisionedDevices"];
         
-        if (name == nil || UUID == nil || teamIdentifier == nil || teamName == nil || creationDate == nil || expirationDate == nil || entitlements == nil || deviceIDs == nil)
+        if (name == nil || UUID == nil || teamIdentifier == nil || teamName == nil || creationDate == nil || expirationDate == nil || entitlements == nil)
         {
             return nil;
         }
@@ -106,7 +106,10 @@
         _expirationDate = [expirationDate copy];
         
         _entitlements = [entitlements copy];
-        _deviceIDs = [deviceIDs copy];
+
+        if (deviceIDs != nil) {
+            _deviceIDs = [deviceIDs copy];
+        }
         
         _isFreeProvisioningProfile = isFreeProvisioningProfile;
         
