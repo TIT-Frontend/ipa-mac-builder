@@ -102,17 +102,6 @@
 		BFD52C2222A1A9EC000B7ED1 /* cnary.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52C1F22A1A9EC000B7ED1 /* cnary.c */; };
 		CE5E0E6E2A24C31500AE7AD3 /* AnisetteDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E0E6D2A24C31500AE7AD3 /* AnisetteDataManager.m */; };
 		CE649C3729CDC33E009AD7E5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C3629CDC33E009AD7E5 /* main.swift */; };
-		CE649C3C29CDC388009AD7E5 /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E3128229F474900370A3C /* ServerProtocol.swift */; };
-		CE649C3D29CDC388009AD7E5 /* CodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD44605241188C300EAB90A /* CodableError.swift */; };
-		CE649C4229CDC388009AD7E5 /* ALTLocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB145828F9DC1000A8F606 /* ALTLocalizedError.swift */; };
-		CE649C4329CDC388009AD7E5 /* ALTWrappedError.m in Sources */ = {isa = PBXBuildFile; fileRef = D51AD27D29356B7B00967AAA /* ALTWrappedError.m */; };
-		CE649C4429CDC388009AD7E5 /* Result+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBAC8852295C90300587369 /* Result+Conveniences.swift */; };
-		CE649C4529CDC388009AD7E5 /* Bundle+MiniAppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E314122A05D4C00370A3C /* Bundle+MiniAppBuilder.swift */; };
-		CE649C4629CDC388009AD7E5 /* ALTServerError+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF767CB2489AB5C0097E58C /* ALTServerError+Conveniences.swift */; };
-		CE649C4729CDC388009AD7E5 /* NSXPCConnection+MachServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1FE357251A9FB000C3CE09 /* NSXPCConnection+MachServices.swift */; };
-		CE649C4929CDC388009AD7E5 /* NSError+MiniAppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C336124197D700034FD24 /* NSError+MiniAppBuilder.swift */; };
-		CE649C4A29CDC388009AD7E5 /* OperatingSystemVersion+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5708416292448DA00D42D34 /* OperatingSystemVersion+Comparable.swift */; };
-		CE649C4B29CDC388009AD7E5 /* NSError+ALTServerError.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E314922A060F400370A3C /* NSError+ALTServerError.m */; };
 		CE649C6A29CDC3A5009AD7E5 /* NSError+libimobiledevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE649C4F29CDC3A4009AD7E5 /* NSError+libimobiledevice.mm */; };
 		CE649C6B29CDC3A5009AD7E5 /* ALTDeviceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE649C5129CDC3A4009AD7E5 /* ALTDeviceManager.mm */; };
 		CE649C6C29CDC3A5009AD7E5 /* ALTDeviceManager+Installation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE649C5229CDC3A4009AD7E5 /* ALTDeviceManager+Installation.swift */; };
@@ -126,6 +115,19 @@
 		CE94633929DBCDEB0044F4E1 /* AltSign-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE94633829DBCDEB0044F4E1 /* AltSign-Dynamic */; };
 		CE94633A29DBCDEB0044F4E1 /* AltSign-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = CE94633829DBCDEB0044F4E1 /* AltSign-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		EE20F5482A39C16100C938F9 /* Dialog.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE20F5472A39C14100C938F9 /* Dialog.sh */; };
+		EE20F57B2A3B0DE300C938F9 /* CodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F56B2A3B0DD100C938F9 /* CodableError.swift */; };
+		EE20F57C2A3B0DE300C938F9 /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F56C2A3B0DD100C938F9 /* ServerProtocol.swift */; };
+		EE20F57D2A3B0DE300C938F9 /* NSXPCConnection+MachServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F56E2A3B0DD100C938F9 /* NSXPCConnection+MachServices.swift */; };
+		EE20F57E2A3B0DE300C938F9 /* OperatingSystemVersion+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F56F2A3B0DD100C938F9 /* OperatingSystemVersion+Comparable.swift */; };
+		EE20F57F2A3B0DE300C938F9 /* ALTServerError+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F5702A3B0DD100C938F9 /* ALTServerError+Conveniences.swift */; };
+		EE20F5802A3B0DE300C938F9 /* Result+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F5712A3B0DD100C938F9 /* Result+Conveniences.swift */; };
+		EE20F5812A3B0DE300C938F9 /* NSError+MiniAppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F5722A3B0DD100C938F9 /* NSError+MiniAppBuilder.swift */; };
+		EE20F5822A3B0DE300C938F9 /* Bundle+MiniAppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F5732A3B0DD100C938F9 /* Bundle+MiniAppBuilder.swift */; };
+		EE20F5832A3B0DE300C938F9 /* ALTWrappedError.h in Sources */ = {isa = PBXBuildFile; fileRef = EE20F5752A3B0DD100C938F9 /* ALTWrappedError.h */; };
+		EE20F5842A3B0DE300C938F9 /* ALTWrappedError.m in Sources */ = {isa = PBXBuildFile; fileRef = EE20F5762A3B0DD100C938F9 /* ALTWrappedError.m */; };
+		EE20F5852A3B0DE300C938F9 /* ALTLocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20F5772A3B0DD100C938F9 /* ALTLocalizedError.swift */; };
+		EE20F5862A3B0DE300C938F9 /* NSError+ALTServerError.h in Sources */ = {isa = PBXBuildFile; fileRef = EE20F5792A3B0DD100C938F9 /* NSError+ALTServerError.h */; };
+		EE20F5872A3B0DE300C938F9 /* NSError+ALTServerError.m in Sources */ = {isa = PBXBuildFile; fileRef = EE20F57A2A3B0DD100C938F9 /* NSError+ALTServerError.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,14 +169,6 @@
 		59618F4167C1F2A9FB3615A0 /* Pods-MiniAppBuilder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniAppBuilder.debug.xcconfig"; path = "Target Support Files/Pods-MiniAppBuilder/Pods-MiniAppBuilder.debug.xcconfig"; sourceTree = "<group>"; };
 		A87E862759DA9B92B091C6E8 /* Pods-MiniAppBuilder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniAppBuilder.release.xcconfig"; path = "Target Support Files/Pods-MiniAppBuilder/Pods-MiniAppBuilder.release.xcconfig"; sourceTree = "<group>"; };
 		BF088D322501A4FF008082D9 /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = Dependencies/AltSign/Dependencies/OpenSSL/Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
-		BF18BFF22485828200DD5981 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
-		BF18BFF624858BDE00DD5981 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		BF18BFFE2485A42800DD5981 /* ALTConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTConnection.h; sourceTree = "<group>"; };
-		BF1E3128229F474900370A3C /* ServerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerProtocol.swift; sourceTree = "<group>"; };
-		BF1E314122A05D4C00370A3C /* Bundle+MiniAppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MiniAppBuilder.swift"; sourceTree = "<group>"; };
-		BF1E314822A060F400370A3C /* NSError+ALTServerError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+ALTServerError.h"; sourceTree = "<group>"; };
-		BF1E314922A060F400370A3C /* NSError+ALTServerError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+ALTServerError.m"; sourceTree = "<group>"; };
-		BF1FE357251A9FB000C3CE09 /* NSXPCConnection+MachServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSXPCConnection+MachServices.swift"; sourceTree = "<group>"; };
 		BF45872B2298D31600BD7491 /* libimobiledevice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libimobiledevice.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4587C82298D3A800BD7491 /* service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = service.h; path = Dependencies/libimobiledevice/src/service.h; sourceTree = SOURCE_ROOT; };
 		BF4587C92298D3A800BD7491 /* diagnostics_relay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = diagnostics_relay.c; path = Dependencies/libimobiledevice/src/diagnostics_relay.c; sourceTree = SOURCE_ROOT; };
@@ -239,15 +233,7 @@
 		BF4588492298D55000BD7491 /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = thread.h; path = Dependencies/libusbmuxd/common/thread.h; sourceTree = SOURCE_ROOT; };
 		BF4588872298DD3F00BD7491 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		BF580497246A3D19008AE704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BF6C336124197D700034FD24 /* NSError+MiniAppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+MiniAppBuilder.swift"; sourceTree = "<group>"; };
-		BF718BC723C919CC00A89F2D /* CFNotificationName+AltStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CFNotificationName+AltStore.h"; sourceTree = "<group>"; };
-		BF718BC823C919E300A89F2D /* CFNotificationName+AltStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CFNotificationName+AltStore.m"; sourceTree = "<group>"; };
-		BF718BD723C93DB700A89F2D /* ALTConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALTConstants.m; sourceTree = "<group>"; };
-		BFBAC8852295C90300587369 /* Result+Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Conveniences.swift"; sourceTree = "<group>"; };
-		BFC712C12512D5F100AB5EBE /* XPCConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCConnection.swift; sourceTree = "<group>"; };
 		BFD247862284BB3B00981D42 /* Roxas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFD44605241188C300EAB90A /* CodableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableError.swift; sourceTree = "<group>"; };
-		BFD52BD222A06EFB000B7ED1 /* ALTConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTConstants.h; sourceTree = "<group>"; };
 		BFD52BE522A1A9CA000B7ED1 /* ptrarray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ptrarray.c; path = Dependencies/libplist/src/ptrarray.c; sourceTree = SOURCE_ROOT; };
 		BFD52BE622A1A9CA000B7ED1 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = Dependencies/libplist/src/base64.c; sourceTree = SOURCE_ROOT; };
 		BFD52BE722A1A9CA000B7ED1 /* hashtable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hashtable.c; path = Dependencies/libplist/src/hashtable.c; sourceTree = SOURCE_ROOT; };
@@ -279,10 +265,6 @@
 		BFD52C1D22A1A9EC000B7ED1 /* node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = node.c; path = Dependencies/libplist/libcnary/node.c; sourceTree = SOURCE_ROOT; };
 		BFD52C1E22A1A9EC000B7ED1 /* node_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = node_list.c; path = Dependencies/libplist/libcnary/node_list.c; sourceTree = SOURCE_ROOT; };
 		BFD52C1F22A1A9EC000B7ED1 /* cnary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cnary.c; path = Dependencies/libplist/libcnary/cnary.c; sourceTree = SOURCE_ROOT; };
-		BFF435D7255CBDAB00DD724F /* ALTApplication+AltStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ALTApplication+AltStoreApp.swift"; sourceTree = "<group>"; };
-		BFF767CB2489AB5C0097E58C /* ALTServerError+Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ALTServerError+Conveniences.swift"; sourceTree = "<group>"; };
-		BFF767CD2489ABE90097E58C /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
-		BFF7C906257844C900E55F36 /* AltXPCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AltXPCProtocol.h; sourceTree = "<group>"; };
 		CE5E0E6A2A24C23000AE7AD3 /* ALTAnisetteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALTAnisetteData.h; path = "Dependencies/AltSign/AltSign/Model/Apple API/ALTAnisetteData.h"; sourceTree = SOURCE_ROOT; };
 		CE5E0E6C2A24C31500AE7AD3 /* AnisetteDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnisetteDataManager.h; sourceTree = "<group>"; };
 		CE5E0E6D2A24C31500AE7AD3 /* AnisetteDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnisetteDataManager.m; sourceTree = "<group>"; };
@@ -303,12 +285,21 @@
 		CE769FE12A07A39E00A2F9E7 /* ALTDebugConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTDebugConnection.h; sourceTree = "<group>"; };
 		CE769FE22A07A39E00A2F9E7 /* ALTDebugConnection.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ALTDebugConnection.mm; sourceTree = "<group>"; };
 		CE79FBC22A0B9DF200D5CBF7 /* libswift_Concurrency.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswift_Concurrency.tbd; path = usr/lib/swift/libswift_Concurrency.tbd; sourceTree = SDKROOT; };
-		D51AD27C29356B7B00967AAA /* ALTWrappedError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTWrappedError.h; sourceTree = "<group>"; };
-		D51AD27D29356B7B00967AAA /* ALTWrappedError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALTWrappedError.m; sourceTree = "<group>"; };
 		D533E8B62727841800A9B5DD /* libAppleArchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libAppleArchive.tbd; path = usr/lib/libAppleArchive.tbd; sourceTree = SDKROOT; };
-		D5708416292448DA00D42D34 /* OperatingSystemVersion+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperatingSystemVersion+Comparable.swift"; sourceTree = "<group>"; };
-		D5DB145828F9DC1000A8F606 /* ALTLocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALTLocalizedError.swift; sourceTree = "<group>"; };
 		EE20F5472A39C14100C938F9 /* Dialog.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Dialog.sh; sourceTree = "<group>"; };
+		EE20F56B2A3B0DD100C938F9 /* CodableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableError.swift; sourceTree = "<group>"; };
+		EE20F56C2A3B0DD100C938F9 /* ServerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerProtocol.swift; sourceTree = "<group>"; };
+		EE20F56E2A3B0DD100C938F9 /* NSXPCConnection+MachServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSXPCConnection+MachServices.swift"; sourceTree = "<group>"; };
+		EE20F56F2A3B0DD100C938F9 /* OperatingSystemVersion+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperatingSystemVersion+Comparable.swift"; sourceTree = "<group>"; };
+		EE20F5702A3B0DD100C938F9 /* ALTServerError+Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ALTServerError+Conveniences.swift"; sourceTree = "<group>"; };
+		EE20F5712A3B0DD100C938F9 /* Result+Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Conveniences.swift"; sourceTree = "<group>"; };
+		EE20F5722A3B0DD100C938F9 /* NSError+MiniAppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+MiniAppBuilder.swift"; sourceTree = "<group>"; };
+		EE20F5732A3B0DD100C938F9 /* Bundle+MiniAppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+MiniAppBuilder.swift"; sourceTree = "<group>"; };
+		EE20F5752A3B0DD100C938F9 /* ALTWrappedError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTWrappedError.h; sourceTree = "<group>"; };
+		EE20F5762A3B0DD100C938F9 /* ALTWrappedError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALTWrappedError.m; sourceTree = "<group>"; };
+		EE20F5772A3B0DD100C938F9 /* ALTLocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALTLocalizedError.swift; sourceTree = "<group>"; };
+		EE20F5792A3B0DD100C938F9 /* NSError+ALTServerError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+ALTServerError.h"; sourceTree = "<group>"; };
+		EE20F57A2A3B0DD100C938F9 /* NSError+ALTServerError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+ALTServerError.m"; sourceTree = "<group>"; };
 		F0BE79CB125D3E6B5EB64436 /* Pods-MiniAppBuilder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniAppBuilder.debug.xcconfig"; path = "Target Support Files/Pods-MiniAppBuilder/Pods-MiniAppBuilder.debug.xcconfig"; sourceTree = "<group>"; };
 		F31FC1970CFA6992F41903B0 /* Pods_MiniAppBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniAppBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -345,30 +336,6 @@
 				035DB8235B4843F514BB9727 /* Pods-MiniAppBuilder.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		BF18BFFF2485A75F00DD5981 /* Server Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				BF1E3128229F474900370A3C /* ServerProtocol.swift */,
-				BFD44605241188C300EAB90A /* CodableError.swift */,
-			);
-			path = "Server Protocol";
-			sourceTree = "<group>";
-		};
-		BF1E315122A0616100370A3C /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				BFD52BD222A06EFB000B7ED1 /* ALTConstants.h */,
-				BF718BD723C93DB700A89F2D /* ALTConstants.m */,
-				BF18BFFF2485A75F00DD5981 /* Server Protocol */,
-				BFF767CF2489AC240097E58C /* Connections */,
-				BFF7C92D2578464D00E55F36 /* XPC */,
-				D5DB145728F9DC0300A8F606 /* Errors */,
-				BFF767C32489A6800097E58C /* Extensions */,
-				BFF767C42489A6980097E58C /* Categories */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		BF45872C2298D31600BD7491 /* libimobiledevice */ = {
@@ -513,7 +480,6 @@
 		BFD247612284B9A500981D42 = {
 			isa = PBXGroup;
 			children = (
-				BF1E315122A0616100370A3C /* Shared */,
 				BF45872C2298D31600BD7491 /* libimobiledevice */,
 				CE649C3529CDC33E009AD7E5 /* MiniAppBuilder */,
 				BFD247852284BB3300981D42 /* Frameworks */,
@@ -547,51 +513,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BFF767C32489A6800097E58C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				BFBAC8852295C90300587369 /* Result+Conveniences.swift */,
-				BF1E314122A05D4C00370A3C /* Bundle+MiniAppBuilder.swift */,
-				BFF767CB2489AB5C0097E58C /* ALTServerError+Conveniences.swift */,
-				BF1FE357251A9FB000C3CE09 /* NSXPCConnection+MachServices.swift */,
-				BFF435D7255CBDAB00DD724F /* ALTApplication+AltStoreApp.swift */,
-				BF6C336124197D700034FD24 /* NSError+MiniAppBuilder.swift */,
-				D5708416292448DA00D42D34 /* OperatingSystemVersion+Comparable.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		BFF767C42489A6980097E58C /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				BF1E314822A060F400370A3C /* NSError+ALTServerError.h */,
-				BF1E314922A060F400370A3C /* NSError+ALTServerError.m */,
-				BF718BC723C919CC00A89F2D /* CFNotificationName+AltStore.h */,
-				BF718BC823C919E300A89F2D /* CFNotificationName+AltStore.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		BFF767CF2489AC240097E58C /* Connections */ = {
-			isa = PBXGroup;
-			children = (
-				BF18BFF22485828200DD5981 /* ConnectionManager.swift */,
-				BF18BFFE2485A42800DD5981 /* ALTConnection.h */,
-				BF18BFF624858BDE00DD5981 /* Connection.swift */,
-				BFF767CD2489ABE90097E58C /* NetworkConnection.swift */,
-				BFC712C12512D5F100AB5EBE /* XPCConnection.swift */,
-			);
-			path = Connections;
-			sourceTree = "<group>";
-		};
-		BFF7C92D2578464D00E55F36 /* XPC */ = {
-			isa = PBXGroup;
-			children = (
-				BFF7C906257844C900E55F36 /* AltXPCProtocol.h */,
-			);
-			path = XPC;
-			sourceTree = "<group>";
-		};
 		CE1A085F29D36AB700A4A12B /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +523,7 @@
 		CE649C3529CDC33E009AD7E5 /* MiniAppBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				EE20F5692A3B0DD100C938F9 /* Base */,
 				CE5E0E6A2A24C23000AE7AD3 /* ALTAnisetteData.h */,
 				CE649C9029D19092009AD7E5 /* MiniAppBuilder.entitlements */,
 				CE769FDF2A07A39E00A2F9E7 /* Connections */,
@@ -656,14 +578,56 @@
 			path = Connections;
 			sourceTree = "<group>";
 		};
-		D5DB145728F9DC0300A8F606 /* Errors */ = {
+		EE20F5692A3B0DD100C938F9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				D5DB145828F9DC1000A8F606 /* ALTLocalizedError.swift */,
-				D51AD27C29356B7B00967AAA /* ALTWrappedError.h */,
-				D51AD27D29356B7B00967AAA /* ALTWrappedError.m */,
+				EE20F56A2A3B0DD100C938F9 /* Server Protocol */,
+				EE20F56D2A3B0DD100C938F9 /* Extensions */,
+				EE20F5742A3B0DD100C938F9 /* Errors */,
+				EE20F5782A3B0DD100C938F9 /* Categories */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EE20F56A2A3B0DD100C938F9 /* Server Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EE20F56B2A3B0DD100C938F9 /* CodableError.swift */,
+				EE20F56C2A3B0DD100C938F9 /* ServerProtocol.swift */,
+			);
+			path = "Server Protocol";
+			sourceTree = "<group>";
+		};
+		EE20F56D2A3B0DD100C938F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE20F56E2A3B0DD100C938F9 /* NSXPCConnection+MachServices.swift */,
+				EE20F56F2A3B0DD100C938F9 /* OperatingSystemVersion+Comparable.swift */,
+				EE20F5702A3B0DD100C938F9 /* ALTServerError+Conveniences.swift */,
+				EE20F5712A3B0DD100C938F9 /* Result+Conveniences.swift */,
+				EE20F5722A3B0DD100C938F9 /* NSError+MiniAppBuilder.swift */,
+				EE20F5732A3B0DD100C938F9 /* Bundle+MiniAppBuilder.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE20F5742A3B0DD100C938F9 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				EE20F5752A3B0DD100C938F9 /* ALTWrappedError.h */,
+				EE20F5762A3B0DD100C938F9 /* ALTWrappedError.m */,
+				EE20F5772A3B0DD100C938F9 /* ALTLocalizedError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		EE20F5782A3B0DD100C938F9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EE20F5792A3B0DD100C938F9 /* NSError+ALTServerError.h */,
+				EE20F57A2A3B0DD100C938F9 /* NSError+ALTServerError.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -887,23 +851,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE20F57B2A3B0DE300C938F9 /* CodableError.swift in Sources */,
+				EE20F57C2A3B0DE300C938F9 /* ServerProtocol.swift in Sources */,
+				EE20F57D2A3B0DE300C938F9 /* NSXPCConnection+MachServices.swift in Sources */,
+				EE20F57E2A3B0DE300C938F9 /* OperatingSystemVersion+Comparable.swift in Sources */,
+				EE20F57F2A3B0DE300C938F9 /* ALTServerError+Conveniences.swift in Sources */,
+				EE20F5802A3B0DE300C938F9 /* Result+Conveniences.swift in Sources */,
+				EE20F5812A3B0DE300C938F9 /* NSError+MiniAppBuilder.swift in Sources */,
+				EE20F5822A3B0DE300C938F9 /* Bundle+MiniAppBuilder.swift in Sources */,
+				EE20F5832A3B0DE300C938F9 /* ALTWrappedError.h in Sources */,
+				EE20F5842A3B0DE300C938F9 /* ALTWrappedError.m in Sources */,
+				EE20F5852A3B0DE300C938F9 /* ALTLocalizedError.swift in Sources */,
+				EE20F5862A3B0DE300C938F9 /* NSError+ALTServerError.h in Sources */,
+				EE20F5872A3B0DE300C938F9 /* NSError+ALTServerError.m in Sources */,
 				CE769FE32A07A3BE00A2F9E7 /* ALTDebugConnection.mm in Sources */,
 				CE5E0E6E2A24C31500AE7AD3 /* AnisetteDataManager.m in Sources */,
 				CE649C6E29CDC3A5009AD7E5 /* UserDefaults+MiniAppBuilder.swift in Sources */,
 				CE649C7829CDC3A5009AD7E5 /* DeveloperDiskManager.swift in Sources */,
-				CE649C3C29CDC388009AD7E5 /* ServerProtocol.swift in Sources */,
-				CE649C3D29CDC388009AD7E5 /* CodableError.swift in Sources */,
 				CE649C6A29CDC3A5009AD7E5 /* NSError+libimobiledevice.mm in Sources */,
 				CE649C6D29CDC3A5009AD7E5 /* FileManager+URLs.swift in Sources */,
-				CE649C4229CDC388009AD7E5 /* ALTLocalizedError.swift in Sources */,
-				CE649C4329CDC388009AD7E5 /* ALTWrappedError.m in Sources */,
-				CE649C4429CDC388009AD7E5 /* Result+Conveniences.swift in Sources */,
-				CE649C4529CDC388009AD7E5 /* Bundle+MiniAppBuilder.swift in Sources */,
-				CE649C4629CDC388009AD7E5 /* ALTServerError+Conveniences.swift in Sources */,
-				CE649C4729CDC388009AD7E5 /* NSXPCConnection+MachServices.swift in Sources */,
-				CE649C4929CDC388009AD7E5 /* NSError+MiniAppBuilder.swift in Sources */,
-				CE649C4A29CDC388009AD7E5 /* OperatingSystemVersion+Comparable.swift in Sources */,
-				CE649C4B29CDC388009AD7E5 /* NSError+ALTServerError.m in Sources */,
 				CE649C6B29CDC3A5009AD7E5 /* ALTDeviceManager.mm in Sources */,
 				CE649C3729CDC33E009AD7E5 /* main.swift in Sources */,
 				CE649C6C29CDC3A5009AD7E5 /* ALTDeviceManager+Installation.swift in Sources */,
