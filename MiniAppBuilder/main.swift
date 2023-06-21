@@ -75,8 +75,12 @@ class Application: NSObject {
             let signType = parsedArguments.get(typeOption) ?? "appleId"
             
             if action == "clear" {
-                UserDefaults.standard.set("no", forKey: "rememberAppleId")
-                UserDefaults.standard.set("no", forKey: "rememberCertificate")
+               if signType == "appleId" {
+                    UserDefaults.standard.set("no", forKey: "rememberAppleId")
+                }
+                if signType == "certificate" {
+                    UserDefaults.standard.set("no", forKey: "rememberCertificate")
+                }
                 print("Clear remember successfully")
                 exit(0)
             }
